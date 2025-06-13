@@ -6,7 +6,7 @@ import { getDatabase,
          set
  } from "firebase/database";
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword} from "firebase/auth"
 
 import '../styles/styles.css'
 
