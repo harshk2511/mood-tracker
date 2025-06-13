@@ -1,16 +1,12 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
-
+import { initializeApp } from "firebase/app";
 import { getDatabase,
          ref,
          get,
          push,
          set
- } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-database.js";
+ } from "firebase/database";
 
-import { getAuth,
-         signInWithEmailAndPassword,
-         onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
+import { getAuth, onAuthStateChanged } from "firebase/auth"
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
