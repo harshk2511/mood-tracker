@@ -6,7 +6,7 @@ import { getDatabase,
          set
  } from "firebase/database";
 
-import { getAuth, onAuthStateChanged } from "firebase/auth"
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth"
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
