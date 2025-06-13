@@ -15,22 +15,22 @@ const firebaseConfig = {
 };
 
 //CSS
-import './styles/styles.css'
-import './styles/createUser.css'
-import './styles/displayMoods.css'
-import './styles/logMood.css'
-import './styles/moodGraph.css'
-import './styles/userOptions.css'
-import './styles/userProfile.css'
+// import './styles/styles.css'
+// import './styles/createUser.css'
+// import './styles/displayMoods.css'
+// import './styles/logMood.css'
+// import './styles/moodGraph.css'
+// import './styles/userOptions.css'
+// import './styles/userProfile.css'
 
-//JS
-import './scripts/index.js'
-import './scripts/createUser.js'
-import './scripts/displayMoods.js'
-import './scripts/logMood.js'
-import './scripts/moodGraph.js'
-import './scripts/userOptions.js'
-import './scripts/userProfile.js'
+// //JS
+// import './scripts/index.js'
+// import './scripts/createUser.js'
+// import './scripts/displayMoods.js'
+// import './scripts/logMood.js'
+// import './scripts/moodGraph.js'
+// import './scripts/userOptions.js'
+// import './scripts/userProfile.js'
 
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
