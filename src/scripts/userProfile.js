@@ -1,11 +1,12 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js"
-
+import { initializeApp } from "firebase/app";
 import { getDatabase,
          ref,
-         get
- } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-database.js"
+         get,
+         push,
+         set
+ } from "firebase/database";
 
-import { getAuth } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js"
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 
 import '../styles/userProfile.css'
 
