@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("/assets/images/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover cover;
+    background-position: center center;
+    background-attachment: fixed fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#greeting-text {
+    color: white;
+    font-size: 6.2rem;
+    letter-spacing: -0.05em;
+}
+
+#userOptionsDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#userOptionsDiv button {
+    color: #096B68;
+    background-color: #FFFBDE;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #096B68;
+    height: 40px;
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}  
+
+#userprofile-btn {
+    color: white;
+    background-color: #3D365C;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #096B68;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
