@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url("/assets/images/tree-pattern-reduced-op.png"),
+    background-image: url("/assets/tree-pattern-reduced-op.png"),
     linear-gradient(#90D1CA, #096B68);
     background-position: center center;
     background-attachment: fixed fixed;

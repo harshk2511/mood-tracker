@@ -6,6 +6,8 @@ import { getDatabase,
          set
  } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-database.js";
 
+import '../styles/logMood.css'
+
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
