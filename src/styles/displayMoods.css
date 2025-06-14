@@ -48,12 +48,17 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
+    max-width: calc(100% - 4rem); /* subtract margin total */
     text-align: left;
     padding-left: 2rem;
     padding-right: 2rem;
     box-sizing: border-box; /* ensures padding doesn't expand width */
     margin-bottom: 2rem;
+    background-color: rgba(255, 251, 222, 0.4);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
 }
 
 #past-moods-div div {
