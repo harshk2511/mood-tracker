@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const homeBtn = document.getElementById("home-btn")
   let selectedEmoji = ""
 
+  let reflectPromptFlag = false
+
   const emojidescriptions = {
       "😍": "You’re energized and ready to take on what’s next.",
       "😄": "You’re feeling light, cheerful, and in a good place.",
@@ -124,10 +126,16 @@ document.addEventListener('DOMContentLoaded', function() {
   speakMindBtn.addEventListener("click", function() {
       moodDesc.style.display = "block"
       submitBtn.style.display = "block"
+
+      if (reflectPromptFlag === true) {
+        reflectPrompt.style.display = "none"
+        reflectPromptFlag = false
+      }
   })
 
   let lastDisplayedQuoteIndex = 0
   reflectBtn.addEventListener("click", function() {
+      reflectPromptFlag = true
       moodDesc.style.display = "block"
       submitBtn.style.display = "block"
       reflectPrompt.style.display = "block"

@@ -29,7 +29,6 @@ const moodGraphBtn = document.getElementById("mood-graph-btn")
 let username = ""
 
 // Retrieving username of logged in user from realtime database
-
 onAuthStateChanged(auth, function(user) {
     if (user) {
         get(userRef).then(function(snapshot) {
@@ -49,6 +48,7 @@ onAuthStateChanged(auth, function(user) {
 })
 
 window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.remove('preload');
     const greetingText = document.getElementById("greeting-text")
     const usernameFromLocalStorage = localStorage.getItem("username")
 

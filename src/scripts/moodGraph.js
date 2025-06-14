@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
       "😌": 0,
       "😐": -1,
       "🙁": -2,
-      "😔": -2,
-      "😭": -3
+      "😔": -3,
+      "😭": -4
   };
 
   // displaying mood legend before graph
   const legendDiv = document.getElementById("mood-legend");
 
-  let legendHTML = "<h3>Mood Scale</h3><ul style='display: flex; list-style: none; padding: 0; gap: 20px;'>";
+  let legendHTML = "<h3>Mood Scale</h3><ul style='display: flex; list-style: none; padding: 0; gap: 20px; margin: 1rem 1rem 0 1rem'>";
   for (let mood in moodToPoint) {
     legendHTML += `<li>${mood}: ${moodToPoint[mood]}</li>`;
   }

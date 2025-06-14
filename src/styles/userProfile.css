@@ -53,6 +53,7 @@ p {
     font-size: 1.5rem;
     margin: 2rem auto;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 #user-content p {
@@ -82,4 +83,10 @@ button {
 #sign-out-btn {
     background-color: #3D365C;
     color: #ffffff;
+}
+
+@media(max-width: 412px) {
+    #sign-out-btn {
+        margin-top: 1rem;
+    }
 }

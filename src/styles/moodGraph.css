@@ -43,6 +43,13 @@ p {
     margin-top: 1rem;
 }
 
+@media(max-width: 412px) {
+    .title {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+}
+
 #month-display {
     color: #096B68;
     font-size: 2rem;

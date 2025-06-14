@@ -53,7 +53,7 @@ p {
 #emoji-description {
     color: #096B68;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     letter-spacing: -0.05em;
 }
@@ -65,7 +65,7 @@ p {
     justify-content: center;
     align-items: center;
     margin: 1rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     max-width: 100%;
     overflow-x: auto; /* Allow scroll on tiny screens if needed */
 }
@@ -111,12 +111,21 @@ p {
 
     #reflect-prompt {
         margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title {
+        font-size: 3rem;
     }
 }
 
 #description-buttons {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0rem 1rem 0 1rem;
 }
 
 button {
@@ -127,13 +136,13 @@ button {
     height: 40px;
     font-size: 1rem;
     cursor: pointer;
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 0;
 }
 
 #speak-your-mind-btn {
     background-color: #096B68;
     width: 200px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #help-me-reflect-btn {
