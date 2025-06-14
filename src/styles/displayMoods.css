@@ -70,6 +70,21 @@ p {
     color: #1C3F4A;
 }
 
+@media (max-width: 412px) {
+
+    .title {
+        font-size: 3rem;
+    }
+    
+    #timestamp {
+        font-size: 1rem;
+    } 
+
+    #mood-desc {
+    font-size: 1rem;
+}
+}
+
 button {
     color: white;
     padding: 0.5rem 2rem;
