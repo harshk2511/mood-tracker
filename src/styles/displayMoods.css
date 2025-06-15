@@ -67,7 +67,7 @@ p {
     border-radius: 10px;
     margin-bottom: 2rem;
     border: 1px solid red;  */
-    width: 100vw;
+    width: 100%;
     min-width: 412px;
     max-width: calc(100% - 4rem);
     margin: 0 auto 2rem auto;
