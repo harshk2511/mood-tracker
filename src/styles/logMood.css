@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("/assets/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover; /* or contain, or auto depending on your need */
+    background-position: center, center;
+    background-attachment: fixed, fixed;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    /* background-image: url("/assets/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-position: center center;
+    background-attachment: fixed fixed;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover cover; */
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#title-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.title {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: -0.05em;
+}
+
+#emoji-description {
+    color: #096B68;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.05em;
+}
+
+#emojis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Don't wrap by default */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    overflow-x: auto; /* Allow scroll on tiny screens if needed */
+}
+
+#emojis p {
+    font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 1rem;
+    font-size: 3.5rem;
+    flex: 0 0 auto; /* grow shrink initialwidth ===> Don't grow/shrink. Fit to the width set */
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+}
+
+#emojis p.selected {
+    background-color: #FFFBDE;
+}
+
+@media (max-width: 768px) { /*widths of iPad and below*/
+    #emojis {
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: flex-start; /* Align to left (optional) */
+    }
+
+    #emojis p {
+        font-size: 2.5rem;
+        width: calc(25% - 2rem); /* 4 per row, margin-safe */
+        height: 4rem; /* Make height equal to width */
+        text-align: center;
+    }
+
+    #reflect-prompt {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+#description-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0rem 1rem 0 1rem;
+}
+
+button {
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+#speak-your-mind-btn {
+    background-color: #096B68;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+#help-me-reflect-btn {
+    background-color: #ACD3A8;
+    color: #096B68;
+    width: 200px;
+    text-align: center;
+}
+
+#home-btn {
+    background-color: #3D365C;
+    width: 200px;
+}
+
+#mood-description {
+    margin-top: 1rem;
+    width: 80vw;
+    height: 25vh;
+    background-color: #FFFBDE;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#reflect-prompt {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+}
+
+#submit-btn{
+    background-color: #3D365C;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #096B68;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}

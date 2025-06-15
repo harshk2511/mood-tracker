@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/src/styles/logMood.css"> -->
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <div id="title-items">
+        <p class="title">A thought, a feeling, a moment - start anywhere</p>
+    </div>
+    <p id="emoji-description">How are you feeling ?</p>
+    <div id="emojis" class="carousel-track">
+        <p id="excited">😍</p>
+        <p id="joyful">😄</p>
+        <p id="content">🙂</p>
+        <p id="calm">😌</p>
+        <p id="unengaged">😐</p>
+        <p id="disappointed">🙁</p>
+        <p id="drained">😔</p>
+        <p id="overwhelmed">😭</p>
+    </div>
+    <div id="description-buttons">
+        <button id="speak-your-mind-btn">Speak Your Mind</button>
+        <button id="help-me-reflect-btn">Thoughtful Prompt</button>
+        <button id="home-btn">Home</button>
+    </div>
+    <p id="reflect-prompt"></p>
+    <textarea id="mood-description" style="display: none;" type="text" maxlength="300" placeholder="A feeling, a moment, a thought — share it in 300 characters."></textarea>
+    <button id="submit-btn" style="display: none;">Submit the Feels</button>
+    <script src="/src/scripts/logMood.js" type="module"></script>
+</body>
+</html>

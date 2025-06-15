@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("/assets/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover; /* or contain, or auto depending on your need */
+    background-position: center, center;
+    background-attachment: fixed, fixed;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    /* background-image: url("/assets/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover cover;
+    background-position: center center;
+    background-attachment: fixed fixed; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: white;
+    font-size: 6.2rem;
+    letter-spacing: -0.05em;
+}
+
+#user-content {
+    background-color: #FFFBDE;
+    width: 70vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+#user-content p {
+    margin: 1rem auto;
+}
+
+#btns-div {
+    margin: 2rem auto;
+}
+
+button {
+    padding: 0.5rem 2rem ;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#home-btn {
+    background-color: #ACD3A8;
+    color: #096B68;
+}
+
+#sign-out-btn {
+    background-color: #3D365C;
+    color: #ffffff;
+}
+
+@media(max-width: 412px) {
+    #sign-out-btn {
+        margin-top: 1rem;
+    }
+}

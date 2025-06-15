@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("/assets/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover; /* or contain, or auto depending on your need */
+    background-position: center, center;
+    background-attachment: fixed, fixed;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    /*Background*/
+    /* background-image: url("/assets/tree-pattern-reduced-op.png"),
+    linear-gradient(#90D1CA, #096B68);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+    background-attachment: fixed, fixed; */
+
+    /*For centering*/
+    display: flex;
+    flex-direction: column;   /* Stack children vertically i.e. along cross-axis (y-axis)*/
+    justify-content: center;  /* Aligns across main axis (y-axis in this case) */
+    align-items: center;      /* Aligns across cross-axis (x-axis in this case */
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: white;
+    font-size: 6.2rem;
+    letter-spacing: -0.05em;
+}
+
+.below-title {
+    color: #096B68;
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+}
+
+input {
+    background-color: #FFFBDE;
+    text-align: center;
+    padding: 0.5rem 4rem;
+    border-radius: 10px;
+    border: 1px solid #096B68;
+    margin-top: 1rem;
+}
+
+button {
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#login-btn {
+    background-color: #3D365C;
+    width: 100px;
+    text-align: center;
+}
+
+#signup-btn {
+    background-color: #096B68;
+    width: 200px;
+    margin-bottom: 2rem;
+}
+
+.login-signup-text {
+    font-size: 1rem;
+    color: #333333;
+    margin-top: 2.5rem;
+}
