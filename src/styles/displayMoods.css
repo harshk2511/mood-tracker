@@ -51,10 +51,10 @@ p {
 }
 
 #past-moods-div {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: auto;
+    /* width: auto;
     max-width: calc(100% - 4rem);
     text-align: left;
     padding-left: 2rem;
@@ -68,7 +68,7 @@ p {
     margin-bottom: 2rem;
     border: 1px solid red;  */
     width: 100%;
-    min-width: 412px;
+    overflow-x: auto;
     max-width: calc(100% - 4rem);
     margin: 0 auto 2rem auto;
     padding: 1rem 2rem;
